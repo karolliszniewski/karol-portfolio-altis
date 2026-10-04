@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<ruleset name="Base Theme">
+    <description>Human Made coding standards for the base theme.</description>
+
+    <rule ref="coding-standards"/>
+
+    <file>.</file>
+    <arg name="extensions" value="php"/>
+    <arg name="colors"/>
+    <arg value="sp"/>
+
+    <exclude-pattern>*/vendor/*</exclude-pattern>
+    <exclude-pattern>*/node_modules/*</exclude-pattern>
+</ruleset>

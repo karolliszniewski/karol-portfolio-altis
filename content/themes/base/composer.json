@@ -1,0 +1,16 @@
+{
+    "name": "karol/theme-base",
+    "description": "Base theme",
+    "type": "wordpress-theme",
+    "require-dev": {
+        "humanmade/coding-standards": "^2.1"
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "scripts": {
+        "lint:php": "phpcs"
+    }
+}
