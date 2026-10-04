@@ -16,6 +16,13 @@
     ],
     "minimum-stability": "dev",
     "extra": {
+        "altis": {
+            "modules": {
+                "search": {
+                    "enabled": false
+                }
+            }
+        },
         "installer-paths": {
             "content/mu-plugins/{$name}/": [
                 "type:wordpress-muplugin"
