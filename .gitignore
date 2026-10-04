@@ -6,6 +6,10 @@
 /vendor
 /content/uploads
 /content/plugins/*
+/content/themes/*/vendor
+/content/themes/*/node_modules
+/content/mu-plugins/*/vendor
+/content/mu-plugins/*/node_modules
 
 # secrets / local
 .env
