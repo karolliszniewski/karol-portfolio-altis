@@ -1,0 +1,15 @@
+# Altis
+/wordpress
+/index.php
+/wp-config.php
+/chassis
+/vendor
+/content/uploads
+/content/plugins/*
+
+# secrets / local
+.env
+.env.*
+*.pem
+*.key
+/.config/php

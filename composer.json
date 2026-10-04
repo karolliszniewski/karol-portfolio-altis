@@ -1,0 +1,42 @@
+{
+    "name": "karolliszniewski/karol-portfolio-altis",
+    "description": "Karol portfolio built on Altis",
+    "type": "project",
+    "require": {
+        "altis/altis": "^28.0.0"
+    },
+    "require-dev": {
+        "altis/local-server": "^28.0.0"
+    },
+    "authors": [
+        {
+            "name": "Karol Liszniewski",
+            "email": "lucifermorningstar008@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "extra": {
+        "installer-paths": {
+            "content/mu-plugins/{$name}/": [
+                "type:wordpress-muplugin"
+            ],
+            "content/plugins/{$name}/": [
+                "type:wordpress-plugin"
+            ],
+            "content/themes/{$name}/": [
+                "type:wordpress-theme"
+            ]
+        }
+    },
+    "config": {
+        "platform": {
+            "php": "8.4",
+            "ext-mbstring": "8.4"
+        },
+        "allow-plugins": {
+            "composer/installers": true,
+            "roots/wordpress-core-installer": true,
+            "altis/*": true
+        }
+    }
+}
