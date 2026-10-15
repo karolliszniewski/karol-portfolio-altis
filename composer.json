@@ -20,6 +20,11 @@
             "modules": {
                 "search": {
                     "enabled": false
+                },
+                "projects": {
+                    "entrypoint": [
+                        "content/mu-plugins/projects/load.php"
+                    ]
                 }
             }
         },

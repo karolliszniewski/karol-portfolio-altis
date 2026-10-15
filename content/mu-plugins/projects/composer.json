@@ -1,0 +1,16 @@
+{
+    "name": "karol/projects",
+    "description": "Projects module for Karol Portfolio",
+    "type": "wordpress-muplugin",
+    "require-dev": {
+        "humanmade/coding-standards": "^2.1"
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "scripts": {
+        "lint:php": "phpcs"
+    }
+}
