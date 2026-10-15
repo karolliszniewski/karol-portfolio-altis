@@ -35,3 +35,18 @@ jobs:
       - run: npm ci
       - run: npm run lint:css
       - run: npm run lint:js
+
+  mu-plugins:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: content/mu-plugins/projects
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.4'
+          coverage: none
+          tools: composer:v2
+      - run: composer install --no-interaction --no-progress
+      - run: composer run lint:php
