@@ -14,8 +14,8 @@
 	<h1 class="wp-block-heading has-text-align-center">Hi, I'm Karol</h1>
 	<!-- /wp:heading -->
 
-	<!-- wp:paragraph {"align":"center"} -->
-	<p class="has-text-align-center">WordPress and Altis engineer building fast, standards-driven sites.</p>
+	<!-- wp:paragraph {"align":"center","textColor":"contrast"} -->
+	<p class="has-text-align-center has-contrast-color has-text-color">WordPress and Altis engineer building fast, standards-driven sites.</p>
 	<!-- /wp:paragraph -->
 
 	<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->

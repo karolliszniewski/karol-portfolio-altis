@@ -19,12 +19,12 @@
 		<!-- wp:post-template {"layout":{"type":"grid","columnCount":3}} -->
 			<!-- wp:post-featured-image {"isLink":true,"aspectRatio":"16/9"} /-->
 			<!-- wp:post-title {"isLink":true,"level":3} /-->
-			<!-- wp:post-excerpt /-->
+			<!-- wp:post-excerpt {"textColor":"contrast"} /-->
 		<!-- /wp:post-template -->
 
 		<!-- wp:query-no-results -->
-			<!-- wp:paragraph {"align":"center"} -->
-			<p class="has-text-align-center">Projects coming soon.</p>
+			<!-- wp:paragraph {"align":"center","textColor":"contrast"} -->
+			<p class="has-text-align-center has-contrast-color has-text-color">Projects coming soon.</p>
 			<!-- /wp:paragraph -->
 		<!-- /wp:query-no-results -->
 	</div>
