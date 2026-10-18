@@ -16,7 +16,7 @@
 
 	<!-- wp:query {"queryId":1,"query":{"perPage":12,"pages":0,"offset":0,"postType":"project","order":"desc","orderBy":"date","inherit":false},"layout":{"type":"constrained"}} -->
 	<div class="wp-block-query">
-		<!-- wp:post-template {"layout":{"type":"grid","columnCount":3}} -->
+		<!-- wp:post-template {"textColor":"contrast","layout":{"type":"grid","columnCount":3}} -->
 			<!-- wp:post-featured-image {"isLink":true,"aspectRatio":"16/9"} /-->
 			<!-- wp:post-title {"isLink":true,"level":3} /-->
 			<!-- wp:post-excerpt {"textColor":"contrast"} /-->
