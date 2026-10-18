@@ -24,7 +24,7 @@
 }
 
 .chalkboard :where(h1, h2, h3, p) {
-	font-family: "Segoe Print", "Bradley Hand", "Comic Sans MS", cursive;
+	font-family: var( --wp--preset--font-family--caveat, cursive );
 	letter-spacing: 0.02em;
 	text-shadow:
 		0 0 1px rgba( 255, 255, 255, 0.45 ),

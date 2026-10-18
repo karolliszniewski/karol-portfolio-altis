@@ -15,7 +15,23 @@
 			]
 		},
 		"typography": {
-			"fluid": true
+			"fluid": true,
+			"fontFamilies": [
+				{
+					"fontFamily": "\"Caveat\", cursive",
+					"slug": "caveat",
+					"name": "Caveat",
+					"fontFace": [
+						{
+							"fontFamily": "Caveat",
+							"fontWeight": "400 700",
+							"fontStyle": "normal",
+							"fontDisplay": "swap",
+							"src": [ "file:./assets/fonts/caveat.woff2" ]
+						}
+					]
+				}
+			]
 		},
 		"custom": {
 			"chalkboard": {
