@@ -1,0 +1,32 @@
+.chalkboard {
+	position: relative;
+	margin-block: var( --wp--preset--spacing--50, 2rem );
+	padding: clamp( 1.5rem, 1rem + 4vw, 3.5rem );
+	color: var( --wp--custom--chalkboard--chalk );
+	background-color: var( --wp--custom--chalkboard--slate );
+	background-image:
+		radial-gradient( circle at 18% 28%, rgba( 255, 255, 255, 0.05 ) 0, transparent 38% ),
+		radial-gradient( circle at 82% 72%, rgba( 255, 255, 255, 0.04 ) 0, transparent 42% );
+	border: 14px solid var( --wp--custom--chalkboard--frame );
+	border-radius: 6px;
+	box-shadow:
+		inset 0 0 60px rgba( 0, 0, 0, 0.55 ),
+		0 10px 30px rgba( 0, 0, 0, 0.35 );
+}
+
+.chalkboard::after {
+	position: absolute;
+	inset: 14px;
+	border: 1px dashed rgba( 255, 255, 255, 0.25 );
+	border-radius: 3px;
+	content: "";
+	pointer-events: none;
+}
+
+.chalkboard :where(h1, h2, h3, p) {
+	font-family: "Segoe Print", "Bradley Hand", "Comic Sans MS", cursive;
+	letter-spacing: 0.02em;
+	text-shadow:
+		0 0 1px rgba( 255, 255, 255, 0.45 ),
+		1px 1px 0 rgba( 0, 0, 0, 0.15 );
+}

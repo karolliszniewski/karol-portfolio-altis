@@ -16,6 +16,13 @@
 		},
 		"typography": {
 			"fluid": true
+		},
+		"custom": {
+			"chalkboard": {
+				"slate": "#35654d",
+				"frame": "#6b4a2b",
+				"chalk": "#f6f7f2"
+			}
 		}
 	},
 	"styles": {
