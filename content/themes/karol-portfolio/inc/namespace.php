@@ -30,10 +30,27 @@ function setup(): void {
  * Enqueue static assets.
  */
 function enqueue_assets(): void {
-	$version = wp_get_theme()->get( 'Version' );
+	wp_enqueue_style( SLUG, get_stylesheet_uri(), [], asset_version( 'style.css' ) );
+	wp_register_style( SLUG . '-chalkboard', get_theme_file_uri( 'assets/css/chalkboard.css' ), [], asset_version( 'assets/css/chalkboard.css' ) );
+}
 
-	wp_enqueue_style( SLUG, get_stylesheet_uri(), [], $version );
-	wp_register_style( SLUG . '-chalkboard', get_theme_file_uri( 'assets/css/chalkboard.css' ), [], $version );
+/**
+ * Version an asset by its file modification time.
+ *
+ * Any edit changes the version, which busts browser and Altis integrity-hash caches.
+ *
+ * @param string $relative_path Theme-relative path to the asset.
+ * @return string The file mtime, or the theme version if the file is unreadable.
+ */
+function asset_version( string $relative_path ): string {
+	$mtime = false;
+	$path  = get_theme_file_path( $relative_path );
+
+	if ( file_exists( $path ) ) {
+		$mtime = filemtime( $path );
+	}
+
+	return (string) ( false !== $mtime ? $mtime : wp_get_theme()->get( 'Version' ) );
 }
 
 /**
